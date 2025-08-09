@@ -2,9 +2,6 @@ import csv
 from agents.question_extraction import extract_questions
 from extraction.pdf_text import extract_text_from_pdf
 
-pdf_text = extract_text_from_pdf("Question.pdf")
-questions_extracted = extract_questions(pdf_text)
-
 import csv
 
 def save_questions_to_csv(questions_extracted, output_file=r"data\questions.csv"):
